@@ -1,0 +1,364 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.sidebar {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    height: 100vh;
+    width: 80px;
+}
+
+.side {
+    font-size: 40px;
+}
+
+main {
+    flex: 1;
+    margin: 0;
+    margin-top: -110px;
+}
+
+/* Additional styles for layout */
+.validate-section,
+.community-section,
+.about-us-section {
+    border-bottom: 1px solid #ddd;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 330px;
+    width: 330px;
+}
+
+.link-tree {
+    background-color: #000;
+    color: #FFD700;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 11px 14px;
+    margin-right: 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1.5px solid #FFD700;
+}
+
+.page1 {
+    display: flex;
+    justify-content: center;
+    font-size: 90px;
+    font-weight: 600;
+}
+
+.a {
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    font-weight: 700;
+    color: #000;
+}
+
+.highlight {
+    font-weight: bold;
+    font-size: 98px;
+    color: black;
+}
+
+.highlight .o-shape {
+    display: inline-block;
+    width: 134px;
+    height: 52px;
+    background: linear-gradient(to left, #FFD700, #FFE680);
+    border-radius: 20px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.highlight .o-shape::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sub-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    font-weight: 600;
+    color: #000;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 800;
+    margin-top: 60px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    color: #333;
+    font-size: large;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.cta-buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.join-button {
+    background-color: #FFD700;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 11px 25px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.schedule-button {
+    background-color: #fff;
+    border-color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 11px 25px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.join-button:hover,
+.schedule-button:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.know {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-weight: 700;
+}
+
+.community-section .community-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1000px;
+}
+
+.b {
+    margin-top: 1000px;
+}
+
+.form-container {
+    max-width: 400px;
+}
+
+.community-image {
+    height: 200px;
+    margin-left: 20px;
+}
+
+.about-us-section .faq {
+    margin-top: 20px;
+}
+
+.faq-question {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        transform: rotate(0);
+        writing-mode: horizontal-tb;
+        height: auto;
+    }
+
+    .side {
+        font-size: 30px;
+    }
+
+    main {
+        margin-top: 0;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        height: 200px;
+        width: 200px;
+    }
+
+    .page1 {
+        font-size: 60px;
+    }
+
+    .a {
+        font-size: 40px;
+    }
+
+    .highlight {
+        font-size: 70px;
+    }
+
+    .highlight .o-shape {
+        width: 100px;
+        height: 40px;
+    }
+
+    .highlight .o-shape::before {
+        width: 35px;
+        height: 35px;
+    }
+
+    .sub-heading {
+        font-size: 40px;
+    }
+
+    .quote {
+        font-size: medium;
+    }
+
+    .description {
+        font-size: medium;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .join-button,
+    .schedule-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .community-section .community-form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .community-image {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page1 {
+        font-size: 40px;
+    }
+
+    .a {
+        font-size: 30px;
+    }
+
+    .highlight {
+        font-size: 50px;
+    }
+
+    .highlight .o-shape {
+        width: 80px;
+        height: 30px;
+    }
+
+    .highlight .o-shape::before {
+        width: 25px;
+        height: 25px;
+    }
+
+    .sub-heading {
+        font-size: 30px;
+    }
+
+    .quote {
+        font-size: small;
+    }
+
+    .description {
+        font-size: small;
+    }
+
+    .join-button,
+    .schedule-button {
+        font-size: 16px;
+    }
+
+    .community-section .community-form {
+        margin-top: 500px;
+    }
+
+    .b {
+        margin-top: 500px;
+    }
+}
