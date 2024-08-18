@@ -11,27 +11,31 @@ body {
     display: flex;
     flex-direction: row;
     margin: 0;
+    height: 100vh;
 }
 
 .sidebar {
     background-color: #000;
     color: #fff;
-    padding: 20px;
+    
     text-align: center;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     height: 100vh;
-    width: 80px;
+    width: 8vw;
 }
 
 .side {
-    font-size: 40px;
+    font-size: 5vh;
+    padding: 2vh;
+    margin-right: 3vh;
 }
 
 main {
     flex: 1;
     margin: 0;
-    margin-top: -110px;
+    margin-top: -10vh;
+    padding: 2vh;
 }
 
 /* Additional styles for layout */
@@ -48,69 +52,83 @@ main {
 }
 
 .logo {
-    height: 330px;
-    width: 330px;
+    height: 35vh;
+    width: auto;
 }
 
 .link-tree {
     background-color: #000;
-    color: #FFD700;
-    font-size: 18px;
+    color: #fff;
+    font-size: 2.5vh;
     font-weight: 500;
-    padding: 11px 14px;
-    margin-right: 15px;
+    padding: 2vh 1.5vh;
+    margin-right: 1vh;
     text-decoration: none;
-    border-radius: 8px;
-    border: 1.5px solid #FFD700;
+    border-radius: 1vh;
+    border: 0.15vh solid #FFD700;
 }
 
 .page1 {
     display: flex;
     justify-content: center;
-    font-size: 90px;
-    font-weight: 600;
+    /* font-size: 10vw;
+    font-weight: 600; */
 }
 
 .a {
     display: flex;
     justify-content: center;
-    font-size: 55px;
+    font-size: 9vh;
     font-weight: 700;
     color: #000;
+    margin-top: -8vh;
 }
 
 .highlight {
     font-weight: bold;
-    font-size: 98px;
+    font-size: 15vh;
     color: black;
+    position: relative;
 }
 
 .highlight .o-shape {
     display: inline-block;
-    width: 134px;
-    height: 52px;
-    background: linear-gradient(to left, #FFD700, #FFE680);
+    width: 20vh;
+    height: 10vh;
+    background: linear-gradient(to left, #FFCB47, #FFE680);
+    border-radius: 30px;
+    position: relative;
+    vertical-align: middle;
+}
+.highlight .o-shape1 {
+    display: inline-block;
+    width: 16vh;
+    height: 5vh;
+    background: #fff;
     border-radius: 20px;
     position: relative;
     vertical-align: middle;
+    margin-top: -10vh;
+    margin-left: 2vh;
 }
 
 .highlight .o-shape::before {
     content: '';
     position: absolute;
-    right: 0;
-    width: 50px;
-    height: 50px;
+    width: 5vh;
+    height: 5.1vh;
     background-color: black;
     border-radius: 50%;
     top: 50%;
+    margin-left: 13vh;
     transform: translateY(-50%);
+    z-index: 1;
 }
 
 .sub-heading {
     display: flex;
     justify-content: center;
-    font-size: 55px;
+    font-size: 8vh;
     font-weight: 600;
     color: #000;
 }
@@ -118,62 +136,65 @@ main {
 .quote {
     display: flex;
     justify-content: center;
-    font-size: x-large;
+    font-size: 3vh;
     font-weight: 800;
-    margin-top: 60px;
+    margin-top: 7vh;
 }
 
 .description {
     display: flex;
     justify-content: center;
     color: #333;
-    font-size: large;
+    font-size: 2.5vh;
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 2vh;
+    text-align: center;
+    padding: 0 2vh;
 }
 
 .cta-buttons {
     display: flex;
-    margin-top: 20px;
+    margin-top: 2vh;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .join-button {
     background-color: #FFD700;
     border: none;
-    font-size: 18px;
+    font-size: 2.5vh;
     font-weight: 600;
-    padding: 11px 25px;
-    margin: 10px;
+    padding: 1.5vh 2.5vh;
+    margin: 1vh;
     cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5vh;
+    box-shadow: 0px 0.5vh 1vh rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
 }
 
 .schedule-button {
     background-color: #fff;
     border-color: #000;
-    font-size: 18px;
+    font-size: 2.5vh;
     font-weight: 600;
-    padding: 11px 25px;
-    margin: 10px;
+    padding: 1.5vh 2.5vh;
+    margin: 1vh;
     cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5vh;
+    box-shadow: 0px 0.5vh 1vh rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease;
 }
 
 .join-button:hover,
 .schedule-button:hover {
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0.7vh 1.4vh rgba(0, 0, 0, 0.3);
 }
 
 .know {
     color: #000;
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 10vh;
     font-weight: 700;
 }
 
@@ -181,24 +202,24 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1000px;
+    margin-top: 100vh;
 }
 
 .b {
-    margin-top: 1000px;
+    margin-top: 100vh;
 }
 
 .form-container {
-    max-width: 400px;
+    max-width: 40vw;
 }
 
 .community-image {
-    height: 200px;
-    margin-left: 20px;
+    height: 20vh;
+    margin-left: 2vh;
 }
 
 .about-us-section .faq {
-    margin-top: 20px;
+    margin-top: 2vh;
 }
 
 .faq-question {
@@ -207,8 +228,8 @@ main {
     text-align: left;
     background-color: #f0f0f0;
     border: none;
-    padding: 10px;
-    margin: 5px 0;
+    padding: 1vh;
+    margin: 0.5vh 0;
     cursor: pointer;
 }
 
@@ -216,78 +237,77 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 2vh;
 }
 
 .social-links a {
     color: #fff;
-    margin: 0 10px;
+    margin: 0 1vh;
     text-decoration: none;
 }
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
-    body {
-        flex-direction: column;
-    }
-
     .sidebar {
-        width: 100%;
-        transform: rotate(0);
-        writing-mode: horizontal-tb;
-        height: auto;
+        width: 15vw;
     }
 
     .side {
-        font-size: 30px;
+        font-size: 2.5vh;
     }
 
     main {
-        margin-top: 0;
+        margin-top: -8vh;
     }
 
-    .header {
-        flex-direction: column;
-        text-align: center;
+    .link-tree {
+        display: none;
     }
 
     .logo {
-        height: 200px;
-        width: 200px;
+        height: 25vh;
     }
 
     .page1 {
-        font-size: 60px;
+        font-size: 8vw;
     }
 
     .a {
-        font-size: 40px;
+        font-size: 5vh;
     }
 
     .highlight {
-        font-size: 70px;
+        font-size: 7vh;
     }
 
     .highlight .o-shape {
-        width: 100px;
-        height: 40px;
+        width: 10vh;
+        height: 4vh;
+    }
+
+    .highlight .o-shape1 {
+        width: 8vh;
+        height: 2vh;
+        margin-top: -5.1vh;
+        margin-left: 1vh;
     }
 
     .highlight .o-shape::before {
-        width: 35px;
-        height: 35px;
+        width: 2vh;
+        height: 2vh;
+        margin-left: 7.1vh;
     }
 
     .sub-heading {
-        font-size: 40px;
+        font-size: 4vh;
     }
 
     .quote {
-        font-size: medium;
+        font-size: 2.5vh;
     }
 
     .description {
-        font-size: medium;
+        font-size: 2vh;
     }
 
     .cta-buttons {
@@ -297,68 +317,77 @@ footer {
 
     .join-button,
     .schedule-button {
-        width: 100%;
-        text-align: center;
-    }
-
-    .community-section .community-form {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .community-image {
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-        margin-top: 20px;
+        width: 90%;
     }
 }
 
 @media (max-width: 480px) {
+    .sidebar {
+        width: 15vw;
+    }
+
+    .side {
+        font-size: 4vh;
+    }
     .page1 {
-        font-size: 40px;
+        font-size: 10vw;
     }
 
     .a {
-        font-size: 30px;
+        font-size: 4.5vh;
+        margin-top: -4vh;
     }
 
     .highlight {
-        font-size: 50px;
+        font-size: 8vh;
     }
 
     .highlight .o-shape {
-        width: 80px;
-        height: 30px;
+        width: 12vh;
+        height: 5vh;
+    }
+
+    .highlight .o-shape1 {
+        width: 9vh;
+        height: 3vh;
+        margin-top: -5.5vh;
+        margin-left: 1.5vh;
     }
 
     .highlight .o-shape::before {
-        width: 25px;
-        height: 25px;
+        width: 3vh;
+        height: 3vh;
+        margin-left: 7.6vh;
     }
 
     .sub-heading {
-        font-size: 30px;
+        font-size: 4vh;
     }
 
     .quote {
-        font-size: small;
+        font-size: 1.8vh;
+        font-weight: 600;
     }
 
     .description {
-        font-size: small;
+        font-size: 1.8vh;
+        padding: 0 1vh;
     }
 
-    .join-button,
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6vh;
+    }
+
+    .join-button {
+        font-size: 2vh; 
+        font-weight: 600;      
+        width: 65%;
+    }
     .schedule-button {
-        font-size: 16px;
-    }
-
-    .community-section .community-form {
-        margin-top: 500px;
-    }
-
-    .b {
-        margin-top: 500px;
+        font-size: 2vh;
+        font-weight: 600;
+        width: 65%;
     }
 }
