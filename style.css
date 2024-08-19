@@ -22,11 +22,11 @@ body {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     /* height: 100vh; */
-    width: 11vw;
+    width: 10vw;
 }
 
 .side {
-    font-size: 5vh;
+    font-size: 6vh;
     padding: 2vh;
     margin-right: 2.5vh;
 }
