@@ -22,7 +22,7 @@ body {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     /* height: 100vh; */
-    width: 7vw;
+    width: 11vw;
 }
 
 .side {
@@ -254,13 +254,13 @@ footer {
 }
 
 /* Media Queries for Mobile Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 770px) {
     .sidebar {
-        width: 15vw;
+        width: 12vw;
     }
 
     .side {
-        font-size: 2.5vh;
+        font-size: 5vh;
     }
 
     main {
@@ -324,8 +324,22 @@ footer {
 
     .join-button,
     .schedule-button {
-        width: 90%;
+        width: 65%;
     }
+    .dream{
+        background-color: #000;
+        color: #FFCB47;
+        font-size: 2vh;
+        font-weight: 700;
+        padding: 1.5vh 1vh;
+        display: flex;
+        justify-content: center;
+        margin: 4vh;
+        text-decoration: none;
+        border-radius: 1.5vh;
+        border: 0.5vh solid #FFCB47;
+        /* width: 65%; */
+        }
 }
 
 @media (max-width: 480px) {
@@ -350,7 +364,7 @@ footer {
     }
 
     .highlight {
-        font-size: 8vh;
+        font-size: 7vh;
     }
 
     .highlight .o-shape {
@@ -361,7 +375,7 @@ footer {
     .highlight .o-shape1 {
         width: 9vh;
         height: 3vh;
-        margin-top: -5.5vh;
+        margin-top: -4.3vh;
         margin-left: 1.5vh;
     }
 
@@ -372,7 +386,7 @@ footer {
     }
 
     .sub-heading {
-        font-size: 3.5vh;
+        font-size: 3.2vh;
     }
 
     .quote {
