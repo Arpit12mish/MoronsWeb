@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: row;
     margin: 0;
-    height: 100vh;
+    height: 105vh;
 }
 
 .sidebar {
@@ -21,14 +21,14 @@ body {
     text-align: center;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    height: 100vh;
-    width: 8vw;
+    /* height: 100vh; */
+    width: 7vw;
 }
 
 .side {
     font-size: 5vh;
     padding: 2vh;
-    margin-right: 3vh;
+    margin-right: 2.5vh;
 }
 
 main {
@@ -57,15 +57,19 @@ main {
 }
 
 .link-tree {
-    background-color: #000;
-    color: #fff;
-    font-size: 2.5vh;
-    font-weight: 500;
-    padding: 2vh 1.5vh;
-    margin-right: 1vh;
-    text-decoration: none;
-    border-radius: 1vh;
-    border: 0.15vh solid #FFD700;
+    
+        background-color: #000;
+        color: #FFCB47;
+        font-size: 2.5vh;
+        font-weight: 700;
+        padding: 1.5vh 1vh;
+        display: flex;
+        justify-content: center;
+        margin: 4vh;
+        text-decoration: none;
+        border-radius: 1.5vh;
+        border: 0.5vh solid #FFCB47;
+        /* width: 65%; */
 }
 
 .page1 {
@@ -160,7 +164,7 @@ main {
 }
 
 .join-button {
-    background-color: #FFD700;
+    background-color: #FFCB47;
     border: none;
     font-size: 2.5vh;
     font-weight: 600;
@@ -245,6 +249,9 @@ footer {
     margin: 0 1vh;
     text-decoration: none;
 }
+.dream{
+    display: none;
+}
 
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
@@ -327,10 +334,14 @@ footer {
     }
 
     .side {
-        font-size: 4vh;
+        font-size: 5.5vh;
+        margin-right: -1.2vh;
     }
     .page1 {
         font-size: 10vw;
+    }
+    .link-tree{
+        display: none;
     }
 
     .a {
@@ -361,11 +372,11 @@ footer {
     }
 
     .sub-heading {
-        font-size: 4vh;
+        font-size: 3.5vh;
     }
 
     .quote {
-        font-size: 1.8vh;
+        font-size: 2vh;
         font-weight: 600;
     }
 
@@ -389,5 +400,107 @@ footer {
         font-size: 2vh;
         font-weight: 600;
         width: 65%;
+    }
+    .dream{
+        background-color: #000;
+        color: #FFCB47;
+        font-size: 2vh;
+        font-weight: 700;
+        padding: 1.5vh 1vh;
+        display: flex;
+        justify-content: center;
+        margin: 4vh;
+        text-decoration: none;
+        border-radius: 1.5vh;
+        border: 0.5vh solid #FFCB47;
+        /* width: 65%; */
+        }
+}
+@media (max-width: 380px) {
+    .sidebar {
+        width: 14vw;
+    }
+
+    .side {
+        font-size: 3.5vh;
+        margin-right: -1.2vh;
+    }
+    .page1 {
+        font-size: 7vw;
+    }
+    .link-tree{
+        display: none;
+    }
+
+    .a {
+        font-size: 3vh;
+        margin-top: -4vh;
+    }
+
+    .highlight {
+        font-size: 6vh;
+    }
+
+    .highlight .o-shape {
+        width: 12vh;
+        height: 5vh;
+    }
+
+    .highlight .o-shape1 {
+        width: 9vh;
+        height: 3vh;
+        margin-top: -2.9vh;
+        margin-left: 1.5vh;
+    }
+
+    .highlight .o-shape::before {
+        width: 3vh;
+        height: 3vh;
+        margin-left: 7.6vh;
+    }
+
+    .sub-heading {
+        font-size: 3.2vh;
+    }
+
+    .quote {
+        font-size: 2vh;
+        font-weight: 600;
+    }
+
+    .description {
+        font-size: 1.8vh;
+        padding: 0 1vh;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6vh;
+    }
+
+    .join-button {
+        font-size: 1.9vh; 
+        font-weight: 600;      
+        width: 65%;
+    }
+    .schedule-button {
+        font-size: 1.9vh;
+        font-weight: 600;
+        width: 65%;
+    }
+    .dream{
+    background-color: #000;
+    color: #FFCB47;
+    font-size: 2vh;
+    font-weight: 700;
+    padding: 1.5vh 1vh;
+    display: flex;
+    justify-content: center;
+    margin: 4vh;
+    text-decoration: none;
+    border-radius: 1.5vh;
+    border: 0.5vh solid #FFCB47;
+    /* width: 65%; */
     }
 }
